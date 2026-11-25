@@ -2,7 +2,9 @@
 
 등산복 풀장착 아저씨가 정상에서 인증샷을 찍으려다 솔방울을 밟고 **산 아래 등산로 입구까지 데굴데굴 굴러 내려가는** 62초짜리 3D 코미디 애니메이션입니다. 한국어 대사(음성)와 자막이 함께 들어 있습니다.
 
-- 결과물: `renders/hiker-tumble.mp4` (1920×1080, 30fps, 62초, 자막 번인 + 음성/효과음/음악)
+![미리보기](renders/preview.jpg)
+
+- 결과물: [`renders/hiker-tumble.mp4`](renders/hiker-tumble.mp4) (1920×1080, 30fps, 62초, H.264/AAC, 자막 번인 + 음성/효과음/음악)
 - 자막 파일: `subtitles/hiker-tumble.ko.srt` (유튜브 업로드용 별도 자막)
 
 ## 줄거리 (13개 컷)
