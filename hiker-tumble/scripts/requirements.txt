@@ -1,0 +1,6 @@
+# Python tools for regenerating the audio assets (Python 3.10+)
+supertonic>=1.3.1        # Supertone's open-source on-device TTS (Korean voices)
+faster-whisper>=1.0      # open-source Whisper ASR: QA + word timings for subtitles
+soundfile>=0.12
+numpy>=1.24
+scipy>=1.11              # filters for the procedural SFX & music

@@ -1,0 +1,92 @@
+{
+  "fps": 30,
+  "speakers": {
+    "hiker": {
+      "name": "등산객",
+      "voice": "M2",
+      "speed": 1.08,
+      "color": "#FFE066"
+    },
+    "narrator": {
+      "name": "내레이션",
+      "voice": "F5",
+      "speed": 0.96,
+      "color": "#BDE0FE"
+    }
+  },
+  "lines": [
+    {
+      "id": "n1",
+      "speaker": "narrator",
+      "start": 0.8,
+      "text": "단풍이 곱게 물든 가을 산. 오늘도 한 남자가 정상에 도전한다."
+    },
+    {
+      "id": "h1",
+      "speaker": "hiker",
+      "start": 6.4,
+      "text": "헉… 헉… 정상이 바로 코앞이다!"
+    },
+    {
+      "id": "h2",
+      "speaker": "hiker",
+      "start": 12.5,
+      "text": "역시 나야! 이 정도 산은 껌이지!"
+    },
+    {
+      "id": "h3",
+      "speaker": "hiker",
+      "start": 15.4,
+      "text": "정상 인증샷 하나 남겨야지~"
+    },
+    {
+      "id": "h4",
+      "speaker": "hiker",
+      "start": 18.4,
+      "text": "조금만 뒤로… 조금만 더…"
+    },
+    {
+      "id": "h5",
+      "speaker": "hiker",
+      "start": 23.3,
+      "text": "어? 어, 어어어어?!",
+      "speed": 1.0
+    },
+    {
+      "id": "h6",
+      "speaker": "hiker",
+      "start": 26.9,
+      "text": "으아아아아악!",
+      "speed": 0.75,
+      "fx": "scream",
+      "tts": "으아아아아아아아아아아아악!"
+    },
+    {
+      "id": "h7",
+      "speaker": "hiker",
+      "start": 33.7,
+      "text": "내 등산복! 이거 비싼 거란 말이야!",
+      "speed": 1.15,
+      "fx": "shaky"
+    },
+    {
+      "id": "h8",
+      "speaker": "hiker",
+      "start": 44.4,
+      "text": "…어? 여기… 아까 출발한 곳이잖아?",
+      "speed": 0.98
+    },
+    {
+      "id": "h9",
+      "speaker": "hiker",
+      "start": 52.9,
+      "text": "오… 하산 신기록이다!"
+    },
+    {
+      "id": "n2",
+      "speaker": "narrator",
+      "start": 55.0,
+      "text": "그렇게 그는, 가장 빨리 하산한 등산객이 되었다."
+    }
+  ]
+}

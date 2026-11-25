@@ -1,0 +1,46 @@
+{
+  "name": "hiker-tumble",
+  "version": "1.0.0",
+  "description": "초고속 하산 — 등산객이 굴러 떨어지는 3D 코미디 애니메이션 (Remotion + React Three Fiber)",
+  "repository": {},
+  "license": "UNLICENSED",
+  "engines": {
+    "node": "^20.19.0 || ^22.13.0 || >=24"
+  },
+  "private": true,
+  "dependencies": {
+    "@react-three/fiber": "9.8.2",
+    "@remotion/captions": "4.0.547",
+    "@remotion/cli": "4.0.547",
+    "@remotion/fonts": "4.0.547",
+    "@remotion/media": "4.0.547",
+    "@remotion/three": "4.0.547",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "remotion": "4.0.547",
+    "three": "0.187.0"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config-flat": "4.0.547",
+    "@types/react": "19.3.0",
+    "@types/three": "0.187.0",
+    "@types/web": "0.0.166",
+    "eslint": "10.15.0",
+    "prettier": "3.8.1",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "dev": "remotion studio",
+    "voice": "python3 scripts/gen_voice.py",
+    "audio": "python3 scripts/gen_audio.py",
+    "srt": "tsx scripts/export_srt.ts",
+    "render": "remotion render HikerTumble out/hiker-tumble.mp4 --codec=h264 --crf=18 --audio-bitrate=192k",
+    "build": "remotion bundle",
+    "upgrade": "remotion upgrade",
+    "lint": "eslint src && tsc"
+  },
+  "allowScripts": {
+    "esbuild": false
+  }
+}
