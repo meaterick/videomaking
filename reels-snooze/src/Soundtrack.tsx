@@ -16,9 +16,14 @@ const duck = (sec: number) => {
 
 type Cue = { src: string; at: number; until?: number; volume?: number; loop?: boolean };
 
+// The last bar replays the first bar with the same files at the same gains,
+// so when Reels loops the video the ringing simply carries on.
+const RING_VOL = 0.55;
+const BUZZ_VOL = 0.45;
+
 const CUES: Cue[] = [
   // bar 1-2: phone buzz, slap
-  { src: sfx("phone_buzz"), at: 0, until: EV.slap, volume: 0.45 },
+  { src: sfx("phone_buzz"), at: 0, until: EV.slap, volume: BUZZ_VOL },
   { src: sfx("slap"), at: EV.slap, volume: 0.9 },
   // bar 3: alarm clock + pillow
   { src: sfx("bell_clock"), at: EV.clockRing, until: 4.75, volume: 0.42 },
@@ -57,7 +62,7 @@ const CUES: Cue[] = [
   // weekend
   { src: sfx("bed_flop"), at: EV.flop, volume: 0.75 },
   { src: sfx("birds"), at: 18.5, until: EV.endRing, volume: 0.35 },
-  { src: sfx("phone_buzz"), at: EV.endRing, volume: 0.5 },
+  { src: sfx("phone_buzz"), at: EV.endRing, volume: BUZZ_VOL },
 ];
 
 export const Soundtrack: React.FC = () => {
@@ -65,12 +70,12 @@ export const Soundtrack: React.FC = () => {
   const fr = (s: number) => Math.round(s * fps);
   return (
     <>
-      <Audio name="Ringtone (hook)" src={music("ringtone")} durationInFrames={fr(EV.slap)} volume={0.55} />
+      <Audio name="Ringtone (hook)" src={music("ringtone")} durationInFrames={fr(EV.slap)} volume={RING_VOL} />
       <Audio name="Groove" src={music("groove")} from={fr(1.6)} durationInFrames={fr(9.6)} volume={(f) => 0.42 * duck(1.6 + f / fps)} />
       <Audio name="Stinger" src={music("stinger")} from={fr(12.35)} volume={0.55} />
       <Audio name="Panic" src={music("panic")} from={fr(12.8)} durationInFrames={fr(3.2)} volume={(f) => 0.42 * duck(12.8 + f / fps)} />
       <Audio name="Lofi" src={music("lofi")} from={fr(18.4)} durationInFrames={fr(4.0)} volume={(f) => 0.45 * duck(18.4 + f / fps)} />
-      <Audio name="Ringtone (loop)" src={music("ringtone")} from={fr(EV.endRing)} durationInFrames={fr(DURATION_SEC - EV.endRing)} volume={0.72} />
+      <Audio name="Ringtone (loop)" src={music("ringtone")} from={fr(EV.endRing)} durationInFrames={fr(DURATION_SEC - EV.endRing)} volume={RING_VOL} />
       {LINES.map((l) => (
         <Audio key={l.id} name={`Voice ${l.id}`} src={staticFile(`audio/voice/${l.id}.wav`)} from={fr(l.start)} volume={l.speaker === "rooster" ? 0.75 : 1} />
       ))}
