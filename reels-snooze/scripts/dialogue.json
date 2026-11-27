@@ -1,0 +1,88 @@
+{
+  "fps": 30,
+  "speakers": {
+    "guy": {
+      "name": "아저씨",
+      "voice": "M2",
+      "speed": 0.95,
+      "color": "#FFE066"
+    },
+    "rooster": {
+      "name": "수탉",
+      "voice": "F4",
+      "speed": 1.0,
+      "color": "#FF8A5B"
+    }
+  },
+  "lines": [
+    {
+      "id": "d1",
+      "speaker": "guy",
+      "start": 2.0,
+      "text": "5분만…",
+      "tts": "오분만…",
+      "speed": 0.8,
+      "fx": "sleepy"
+    },
+    {
+      "id": "d2",
+      "speaker": "guy",
+      "start": 3.7,
+      "text": "5분만 더…",
+      "tts": "오분만 더…",
+      "speed": 0.82,
+      "fx": "muffled"
+    },
+    {
+      "id": "d3",
+      "speaker": "guy",
+      "start": 5.3,
+      "text": "으음… 10분만…",
+      "tts": "으음… 십분만…",
+      "speed": 0.88,
+      "fx": "muffled"
+    },
+    {
+      "id": "r1",
+      "speaker": "rooster",
+      "start": 8.35,
+      "text": "꼬끼오오오!",
+      "tts": "꼬끼오오오!",
+      "speed": 0.8,
+      "fx": "rooster",
+      "caption": false,
+      "voice": "M1"
+    },
+    {
+      "id": "d4",
+      "speaker": "guy",
+      "start": 12.05,
+      "text": "어?!",
+      "speed": 1.0
+    },
+    {
+      "id": "d5",
+      "speaker": "guy",
+      "start": 13.7,
+      "text": "지각이다!!",
+      "speed": 1.1,
+      "fx": "shout",
+      "tts": "지각이다!!"
+    },
+    {
+      "id": "d6",
+      "speaker": "guy",
+      "start": 16.6,
+      "text": "…토요일…?",
+      "speed": 0.9
+    },
+    {
+      "id": "d7",
+      "speaker": "guy",
+      "start": 19.0,
+      "text": "주말 최고…",
+      "speed": 0.85,
+      "fx": "sleepy"
+    }
+  ]
+}
